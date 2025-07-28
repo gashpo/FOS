@@ -1,0 +1,4 @@
+// 尺寸
+@function px($key) {
+  @return calc($key / 16 * 1rem);
+}

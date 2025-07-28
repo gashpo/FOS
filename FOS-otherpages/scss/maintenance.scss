@@ -1,0 +1,57 @@
+@import "variable/variable";
+
+body {
+  background-color: color(primary-950);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  min-height: calc(100svh - px(60));
+}
+
+.announcement {
+  width: px(960);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    color: color(gray-200);
+    margin-bottom: px(20);
+  }
+
+  p {
+    @include fontRWD(body3);
+    color: color(gray-400);
+  }
+
+  img {
+    width: px(400);
+  }
+
+  @include max-to(tablet) {
+    flex-direction: column-reverse;
+    gap: px(32);
+
+    img {
+      width: px(250);
+      max-width: calc(100svw - px(40));
+    }
+  }
+
+  @include max-to(mobile) {
+    text-align: center;
+
+    img {
+      display: none;
+    }
+  }
+}
+
+footer {
+  copyright {
+    color: color(primary-200);
+  }
+}

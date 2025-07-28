@@ -1,0 +1,152 @@
+p,
+span {
+  font-size: 1.25rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+@media (max-width: 991px) {
+  p,
+  span {
+    font-size: 1.25rem;
+    line-height: 150%;
+    font-weight: 400;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 120%;
+  font-weight: 700;
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 2.375rem;
+    line-height: 120%;
+    font-weight: 700;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 120%;
+  font-weight: 700;
+}
+@media (max-width: 991px) {
+  h2 {
+    font-size: 2rem;
+    line-height: 120%;
+    font-weight: 700;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 120%;
+  font-weight: 700;
+}
+@media (max-width: 991px) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 120%;
+    font-weight: 700;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 120%;
+  font-weight: 700;
+}
+@media (max-width: 991px) {
+  h4 {
+    font-size: 1.25rem;
+    line-height: 120%;
+    font-weight: 700;
+  }
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 120%;
+  font-weight: 700;
+}
+@media (max-width: 991px) {
+  h5 {
+    font-size: 1.125rem;
+    line-height: 120%;
+    font-weight: 700;
+  }
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 120%;
+  font-weight: 700;
+}
+@media (max-width: 991px) {
+  h6 {
+    font-size: 1rem;
+    line-height: 120%;
+    font-weight: 700;
+  }
+}
+
+body {
+  background-color: #0a0018;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  min-height: calc(100svh - 3.75rem);
+}
+
+.announcement {
+  width: 60rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.announcement h2 {
+  color: #cacaca;
+  margin-bottom: 1.25rem;
+}
+.announcement p {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+  color: #959595;
+}
+@media (max-width: 991px) {
+  .announcement p {
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 400;
+  }
+}
+.announcement img {
+  width: 25rem;
+}
+@media (max-width: 991px) {
+  .announcement {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .announcement img {
+    width: 15.625rem;
+    max-width: calc(100svw - 2.5rem);
+  }
+}
+@media (max-width: 575px) {
+  .announcement {
+    text-align: center;
+  }
+  .announcement img {
+    display: none;
+  }
+}
+
+footer copyright {
+  color: #c199f8;
+}

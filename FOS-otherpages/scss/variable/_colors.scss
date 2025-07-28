@@ -1,0 +1,65 @@
+// 色彩定義
+$colors: ();
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+// 灰階
+$colors: map-merge(
+  $colors,
+  (
+    gray-0: #ffffff,
+    gray-50: #f9f9f9,
+    gray-100: #e5e5e5,
+    gray-200: #cacaca,
+    gray-300: #b0b0b0,
+    gray-400: #959595,
+    gray-500: #7b7b7b,
+    gray-600: #626262,
+    gray-700: #4c4c4c,
+    gray-800: #333333,
+    gray-850: #222222,
+    gray-900: #191919,
+    gray-1000: #0a0a0a,
+  )
+);
+
+// 主色系
+$colors: map-merge(
+  $colors,
+  (
+    primary-20: #f8f7ff,
+    primary-50: #f0e5fd,
+    primary-100: #e0ccfc,
+    primary-200: #c199f8,
+    primary-300: #a366f5,
+    primary-400: #8433f1,
+    primary-500: #6500ee,
+    primary-600: #5100be,
+    primary-700: #3d008f,
+    primary-800: #28005f,
+    primary-850: #1e0047,
+    primary-900: #140030,
+    primary-950: #0a0018,
+  )
+);
+
+// 輔色系
+$colors: map-merge(
+  $colors,
+  (
+    lemonYellow: #f2ff49,
+  )
+);
+
+// 狀態色 - 錯誤
+$colors: map-merge(
+  $colors,
+  (
+    error-50: #ffeded,
+    error-100: #ffdbdb,
+    error-500: #ff4c4c,
+    error-600: #d33d3d,
+  )
+);
